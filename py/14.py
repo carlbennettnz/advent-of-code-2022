@@ -62,25 +62,25 @@ for part in range(1, 3):
     sand = set()
 
     def tick():
-        p = Vector(500, 0)
+        grain = Vector(500, 0)
 
         while True:
-            if p.y == max_y + 1:
+            if grain.y == max_y + 1:
                 if part == 1:
                     return False
                 else:
                     break
-            if not blocked(p + Vector.S):
-                p += Vector.S
-            elif not blocked(p + Vector.SW):
-                p += Vector.SW
-            elif not blocked(p + Vector.SE):
-                p += Vector.SE
+            if not blocked(grain + Vector.S):
+                grain += Vector.S
+            elif not blocked(grain + Vector.SW):
+                grain += Vector.SW
+            elif not blocked(grain + Vector.SE):
+                grain += Vector.SE
             else:
                 break
 
-        sand.add(p)
-        return part != 2 or p.y != 0
+        sand.add(grain)
+        return part != 2 or grain.y != 0
 
     while tick():
         pass

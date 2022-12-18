@@ -96,9 +96,7 @@ for part in range(1, 3):
 
         branches = sorted(new_branches, key=lambda b: -b.score)[0:5000]
 
-    for minute, options in enumerate(branches[0].debug):
-        print(f"{minute+1} | ".rjust(5) + " | ".join([" to ".join(option).ljust(10) for option in options]))
+    # for minute, options in enumerate(branches[0].debug):
+    #     print(f"{minute+1} | ".rjust(5) + " | ".join([" to ".join(option).ljust(10) for option in options]))
 
-    print()
     print(f"part {part}:", branches[0].score)
-    print()
