@@ -1,0 +1,30 @@
+Blueprint 1:
+    Each ore robot costs 4 ore.
+    Each clay robot costs 2 ore.
+    Each obsidian robot costs 3 ore and 14 clay.
+    Each geode robot costs 2 ore and 7 obsidian.
+Blueprint 2: Each ore robot costs 2 ore. Each clay robot costs 3 ore. Each obsidian robot costs 3 ore and 8 clay. Each geode robot costs 3 ore and 12 obsidian.
+
+geodes
+    geode robots
+        2 ore robots
+        7 obsidian robots
+    obsidian robots (max 7)
+        3 ore robots
+        14 clay robots
+    clay robots (max 14)
+        2 ore robots
+    ore robots (max 3)
+        4 ore robots
+
+optimal 20 tick strategy for max clay:
+    1: no options
+    2: no options
+    3: option: buy ore for 2 ore for 17 ore
+         plus -2 ore and clay from 6  (14 clay)
+         plus -2 ore and clay from 9  (10 clay)
+         plus -2 ore and clay from 12 (8  clay)
+         plus -2 ore and clay from 15 (5  clay)
+         plus -2 ore and clay from 18 (2  clay)
+       option: buy clay for 2 ore for 16 clay
+    4:
